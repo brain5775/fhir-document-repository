@@ -1,0 +1,27 @@
+<template>
+  <div class="tw-h-[100dvh]">
+    <NuxtPage />
+  </div>
+</template>
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body,
+html {
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: "Open Sans";
+  overflow: initial;
+}
+</style>
