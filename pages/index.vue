@@ -4,18 +4,23 @@
       <h1 class="tw-text-2xl tw-font-bold">Document Repository Upload Image</h1>
       <div class="tw-w-8/12 tw-border tw-border-slate-700 tw-p-4 tw-rounded-xl tw-bg-slate-300">
         <div class="tw-flex tw-flex-col tw-gap-8">
-          <div class="tw-flex tw-items-center tw-gap-2">
-            <h4 class="tw-text-lg tw-font-bold">Pasien Name:</h4>
-            <span>{{ "Tuyul Bayul" }}</span>
-          </div>
-          <RepositoryImage />
-          <RepositoryAction />
+          <RepositoryDataPatient />
+          <RepositoryDataImage />
         </div>
       </div>
     </div>
   </div>
+  <Transition enter-active-class="tw-transition-opacity tw-ease-linear tw-opacity-0"
+    leave-active-class="tw-transition-opacity tw-ease-linear tw-opacity-0" enter-from-class="tw-opacity-1"
+    leave-to-class="tw-opacity-1">
+    <ModalPhoto v-if="openModalPhoto" />
+  </Transition>
 </template>
 
-<script setup></script>
+<script setup>
+const imageStore = useImageStore();
+const openModalPhoto = computed(() => imageStore.$state.open_modal_photo);
+
+</script>
 
 <style lang="scss" scoped></style>

@@ -7,7 +7,7 @@
             </span>
         </div>
     </div>
-    {{ imageList }}
+    <!-- {{ imageList }} -->
 </template>
 
 <script setup>
