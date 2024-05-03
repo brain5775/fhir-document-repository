@@ -18,6 +18,9 @@ logs
 .fleet
 .idea
 
+# Credential
+Credential
+
 # Local env files
 .env
 .env.*

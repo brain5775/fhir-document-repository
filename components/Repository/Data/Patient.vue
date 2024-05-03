@@ -33,7 +33,6 @@
                     <span>{{ dateFormat(patient.birthDate) }}</span>
                 </div>
             </div>
-
         </div>
     </div>
     <!-- {{ patient }} -->
